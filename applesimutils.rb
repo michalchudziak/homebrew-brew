@@ -1,11 +1,11 @@
 class Applesimutils < Formula
   desc 'Apple simulator utilities'
-  homepage 'https://github.com/wix/AppleSimulatorUtils'
-  url 'https://raw.githubusercontent.com/wix/homebrew-brew/master/AppleSimulatorUtils-0.5.22.tar.gz'
-  sha256 '776ea24f56b9664feb216e6a70107bdb11886cf888c26126ca9ce452b911cb16'
-  head 'https://github.com/wix/AppleSimulatorUtils.git'
+  homepage 'https://github.com/michalchudziak/AppleSimulatorUtils'
+  url 'https://raw.githubusercontent.com/wix/homebrew-brew/master/AppleSimulatorUtils-0.5.23.tar.gz'
+  sha256 '2c995901a1883ebbb9028c41ebfc56d2cef8b77f117ca31862b4f3844dd8554b'
+  head 'https://github.com/michalchudziak/AppleSimulatorUtils.git'
 
-  depends_on xcode: ['8.3', :build]
+  depends_on xcode: ['10.0', :build]
 
   def install
     system './buildForBrew.sh', prefix
